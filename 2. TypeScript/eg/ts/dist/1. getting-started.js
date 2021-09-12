@@ -6,7 +6,7 @@
  * @LastEditTime : 2021-09-12 15:57:02
  * @Descripttion :
  */
-const hello = (name) => {
-    console.log(`Hellow ${name}`);
+var hello = function (name) {
+    console.log("Hellow " + name);
 };
 hello('Ts');
