@@ -1,0 +1,31 @@
+<!--
+ * @Author       : ganbowen
+ * @Date         : 2021-09-09 10:18:03
+ * @LastEditors  : ganbowen
+ * @LastEditTime : 2021-09-09 10:21:18
+ * @Descripttion : 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function makePow(pow) {
+            return function(number){
+                return Math.pow(number,pow)
+            }
+        }
+
+        let makePow2 = makePow(2) 
+        let makePow3 = makePow(3) 
+
+        console.log('makePow(2)', makePow(2))
+        console.log('makePow(3)', makePow(3))
+    </script>
+</body>
+</html>
