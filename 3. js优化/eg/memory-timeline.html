@@ -1,0 +1,32 @@
+<!--
+ * @Author       : ganbowen
+ * @Date         : 2021-09-12 22:25:28
+ * @LastEditors  : ganbowen
+ * @LastEditTime : 2021-09-12 22:36:50
+ * @Descripttion : 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeline记录内存变化</title>
+</head>
+<body>
+    <button id='btn'>Add</button>
+    <script>
+        const arrList = []
+        const btn = document.getElementById('btn')
+       
+        function test() {
+            for(let i = 0;i < 100000; i++) {
+                document.body.appendChild(document.createElement('p'))
+            }
+            arrList.push(new Array(1000000).join('x'))
+        }
+
+        btn.onclick = test
+    </script>
+</body>
+</html>
