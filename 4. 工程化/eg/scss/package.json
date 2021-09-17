@@ -1,0 +1,16 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "sass style/main.scss style/style.css --watch",
+    "serve": "browser-sync . --files \"style/*.css\"",
+    "start": "run-p build serve"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.5",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.41.0"
+  }
+}

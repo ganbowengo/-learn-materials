@@ -1,0 +1,10 @@
+$border-color: white;
+
+body {
+    border: 5px solid $border-color;
+    margin: 0;
+    height: 100%;
+    padding: 16px;
+    background-color: black;
+    color: white;
+}

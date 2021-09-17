@@ -1,0 +1,19 @@
+{
+  "name": "gulp-pages",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "gulp-flow-cli clean",
+    "build": "gulp-flow-cli build",
+    "develop": "gulp-flow-cli develop"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "gulp-flow-cli": "^1.0.1"
+  }
+}
