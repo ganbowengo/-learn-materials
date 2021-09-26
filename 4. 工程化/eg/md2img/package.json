@@ -1,0 +1,34 @@
+{
+  "name": "md2img",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "ganbowen",
+    "email": "ganbowengo@163.com"
+  },
+  "bin": "bin/md2img.js",
+  "main": "lib/cli.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "cac": "^6.7.3",
+    "cosmiconfig": "^7.0.0",
+    "marked": "^2.1.3",
+    "ora": "^5.4.1",
+    "puppeteer-core": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.24",
+    "@types/marked": "2.0.4",
+    "@types/node": "16.0.0",
+    "jest": "27.0.6",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.3",
+    "ts-standard": "10.0.0",
+    "typescript": "4.3.5"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
